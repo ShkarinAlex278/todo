@@ -10,6 +10,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh 'npm start'
+                sh './jenkins/scripts/kill.sh'
             }
         }
     }
