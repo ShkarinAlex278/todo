@@ -2,14 +2,13 @@ pipeline {
     agent any
     tools {nodejs "NODEJS"}
     stages {
-        stage('Build') {
+        stage('Run') {
             steps {
-                input message: 'Build'
+                sh 'npm start'
              }
         }
         stage('Deliver') {
             steps {
-                sh 'npm start'
                 sh './jenkins/scripts/kill.sh'
             }
         }
