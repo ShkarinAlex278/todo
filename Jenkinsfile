@@ -9,8 +9,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                input message: 'Deliver'
-
+                sh 'npm start'
             }
         }
     }
