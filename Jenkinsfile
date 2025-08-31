@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Run') {
             steps {
-                sh 'npm start'
+                input message: 'Build'
              }
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/kill.sh'
-            }
+                sh 'npm start'
+                   }
         }
     }
 }
