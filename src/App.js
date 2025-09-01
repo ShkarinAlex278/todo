@@ -1,12 +1,24 @@
 import './App.css';
-import Head from './Head.js';
-import Done from './Done.js';
 
 function App() {
   return (
-    <div>
-      <Head />
-      <Done />      
+  <div className='form'>
+
+  <div class="wrapper">
+    <header>Todo App</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo" />
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
+    </div>
+  </div>
+
+
     </div>
   );
 }
