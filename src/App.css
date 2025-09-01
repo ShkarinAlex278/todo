@@ -1,12 +1,17 @@
 body {
-    display: flex;
+    /* display: flex;
     align-items: center;
     flex-direction: column;
     background-color: bisque;
     border-style: solid;
     width: 60%;
     height: 80%;
-    align-items: center;
     justify-content: space-around;
-    align-content: space-between;
+    align-content: space-between; */
+    
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    border: 3px solid green;
+    padding: 10px;
 }

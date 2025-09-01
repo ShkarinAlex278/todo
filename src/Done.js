@@ -6,6 +6,8 @@ function Done() {
     <div className='done'>
       <h1>Done</h1>
       <Day />
+      <Day />
+      <Day />
     </div>
   );
 }
