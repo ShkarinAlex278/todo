@@ -1,9 +1,12 @@
 import './App.css';
+import Head from './Head.js';
+import Done from './Done.js';
 
 function App() {
   return (
     <div>
-      <h1>Hello Alex...</h1>
+      <Head />
+      <Done />      
     </div>
   );
 }
